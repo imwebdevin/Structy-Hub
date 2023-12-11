@@ -13,9 +13,6 @@ const howHigh = (node) => {
   let rightHeight = howHigh(node.right);
   if (node.left || node.right) return 1 + Math.max(leftHeight, rightHeight);
   return 0
-  
-  
-  
 };
 ​
 module.exports = {
