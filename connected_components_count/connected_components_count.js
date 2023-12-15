@@ -14,7 +14,7 @@ const connectedComponentsCount = (graph) => {
           visited.add(curr);
           for (const neighbor of graph[curr]) {
             const neighborAsString = neighbor.toString()
-            if (!visited.has(neighborAsString) {
+            if (!visited.has(neighborAsString)) {
               visited.add(neighborAsString)
               stack.push(neighborAsString)
             }
